@@ -5,6 +5,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import type { Metadata } from "next";
 import LargeHeading from "@/components/ui/LargeHeading";
 import Link from "next/link";
+import "simplebar-react/dist/simplebar.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +38,7 @@ export default function Home() {
             </Link>
             .
           </Paragraph>
-          <div className="relative w-full max-w-lg lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute">
+          <div className="relative w-full max-w-lg lg:max-w-xl lg:left-1/2 aspect-square lg:absolute">
             <Image
               priority
               className="img-shadow"
