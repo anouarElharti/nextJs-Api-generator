@@ -1,4 +1,5 @@
 import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 import { buttonVariants } from "@/ui/Button";
 import SignInButton from "@/components/SignInButton";
@@ -6,7 +7,7 @@ import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const Navbar = async ({}) => {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   return (
     <div
